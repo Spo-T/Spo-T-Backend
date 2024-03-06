@@ -14,4 +14,11 @@ export class UserEntity {
 
     @Column('varchar', { nullable: false, length: 3000 })
     profile: string;
+
+    constructor(id: string, email: string, password: string, profile: string) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.profile = profile;
+    }
 }
